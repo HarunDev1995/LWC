@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="conditional rendering">
+        <div class="slds-var-m-around_medium">
+                <lightning-button
+                variant ="brand"
+                label="show Data"
+                title="show data"
+                onclick={handleClick}
+                class="slds-var-m-left_x-small"
+                >               
+
+                </lightning-button>
+                <template if:true={isVisible} >
+                    <div>Welcome to if true directives</div>
+                </template>
+
+                <template if:false={isVisible} >
+                    <div>You cant see the data.Please press the button to see the data</div>
+                </template>
+
+                <lightning-input type="text" label="type hello to see the data" onkeyup={changeHandler}></lightning-input>
+                <template if:true={helloMethod}>
+                <div>Hurray! you have typed correctly</div>
+                </template>
+
+        </div>
+    </lightning-card>
+</template>

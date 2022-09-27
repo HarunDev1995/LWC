@@ -1,0 +1,21 @@
+/* element level, class level,pseudo level */
+
+/*element level*/
+p{
+    color: green;
+    font-size: 30px;
+    border: 2px red solid;
+}
+
+/* class level*/
+.user{
+    color: yellow;
+    font-size: 20px;
+}
+
+/* pseudo level*/
+
+.user:hover{
+    color: red;
+    font-size: 60px ;
+}

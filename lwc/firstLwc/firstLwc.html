@@ -1,0 +1,27 @@
+<template>
+                <!-- Two way binding -->
+       <lightning-card  title="Two way binding">
+        <div class="slds-m-around_large" >
+            <lightning-input type="text" label="Enter Occupation" onkeyup={changeHandler}></lightning-input>
+        <div>{fullname} is a {occupation}</div>
+        </div>
+        </lightning-card>
+
+                      <!-- @track properties -->
+       <lightning-card  title="@track properties">
+        <div class="slds-m-around_large" >
+            <lightning-input type="text" label="Enter area" onkeyup={trackHandler}></lightning-input>
+        <div>{address.city} is my City</div> 
+        </div>
+        </lightning-card>
+
+                        <!-- Getter Demo -->
+        <lightning-card  title="Getter Demo">
+            <div class="slds-m-around_large" >
+            <div>FirstUser name is {User}</div> 
+            <div>multiplication is  {Number}</div>
+            </div>
+            </lightning-card>
+          
+</template>
+
